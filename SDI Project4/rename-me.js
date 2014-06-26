@@ -18,16 +18,23 @@ var
 	console.log("phoneNumber10" + "123,456,7890."+ "matchPattern." );
 };
 var tenNum = true
-if ( 1234567890 === true) {
-console.log ("Yay it Matches.");
-} else {
-	console.log ("Not a match try again.");
+if ( 123,456,7890 === true) {
+
 };
 
 
 
 myPrompt = prompt ("Enter Phone Number");
-
+if (myPrompt === "123,456,7890") {
+	console.log("Its a match");
+if	(myPrompt === "34,7890") {
+	console.log("Not a Match Try again");	
+} else {
+	console.log("Right Number");
+};
+} else {
+	console.log("Not a Match Try Again");
+};
 
 var url = function (typeurl) {
 var preUrl = type.prestr(0,8);
