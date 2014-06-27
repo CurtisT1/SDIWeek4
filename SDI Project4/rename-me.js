@@ -102,8 +102,8 @@ if (at == -1 ||dot == -1 || (at + 2) >= dot) {
 	return false;
 } else {
 	return true;
-}
 };
+
 
 
 
