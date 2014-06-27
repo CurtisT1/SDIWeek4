@@ -9,9 +9,13 @@
 
 
 var checkPhoneNum;
+var lowestNumber;
 var urlMatch;
 var capLetter;
 var checkemail;
+
+
+
 
 // function 
 
@@ -25,7 +29,33 @@ var checkemail;
  	} else {return fasle;
  }
  };
-//function
+ 
+ 
+ 
+var loweestNumber = function (numberset, givenNumber) {
+
+	var bigNumber = [];
+	var smallestNumber;
+	
+	for(i=0; i < numberSet.length; i++) {
+	if (numberset[i] > givennumber) {
+		bignumbers.push(numberSet[i]);
+	};
+		
+};
+
+smallestNumber = bigNumbers[0];
+
+for (j = 0; j < bigNumber.length; j++) {
+	if (smallestNumber > bigNumber[j]) {
+		smallestNumber = bigNumber [j];
+		};
+};
+
+	return(smallestNumber + " is the smallest number that is larger than" + givenNumber + ".");//function
+
+
+// Functions
 
 var url = function (typeurl) {
 var preUrl = type.prestr(0,8);
@@ -74,6 +104,8 @@ if (at == -1 ||dot == -1 || (at + 2) >= dot) {
 	return true;
 }
 };
+
+
 
 
 
