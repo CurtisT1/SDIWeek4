@@ -1,4 +1,4 @@
-alert("JavaScript works!");
+//alert("JavaScript works!");
 
 
 /* Curtis Tate
@@ -8,33 +8,24 @@ alert("JavaScript works!");
 // global Variables 
 
 
-var phoneNumber
-var urlMatch
-var 
+var checkPhoneNum;
+var urlMatch;
+var capLetter;
+var checkemail;
 
+// function 
 
- phonenumber = function (matchPattern, phoneNumer10){
-	
-	console.log("phoneNumber10" + "123,456,7890."+ "matchPattern." );
-};
-var tenNum = true
-if ( 123,456,7890 === true) {
-
-};
-
-
-
-myPrompt = prompt ("Enter Phone Number");
-if (myPrompt === "123,456,7890") {
-	console.log("Its a match");
-if	(myPrompt === "34,7890") {
-	console.log("Not a Match Try again");	
-} else {
-	console.log("Right Number");
-};
-} else {
-	console.log("Not a Match Try Again");
-};
+ var checkPhoneNum = function(val) {
+ var phonenum = val;
+ var dash1 = (phonenum.substring(3, 4));
+ var dash2 = (phonenum.substring(7,8));
+ 	if (dash1 == "." && dash2 == ".") {
+ 	if (phonenum.length == ".") {
+ 	return true;
+ 	} else {return fasle;
+ }
+ };
+//function
 
 var url = function (typeurl) {
 var preUrl = type.prestr(0,8);
@@ -44,6 +35,22 @@ return true;
 console.log ("do not Match"); };
 }; 
 
+// Prompt for Input
+
+myPrompt = prompt ("Enter Url");
+if (myPrompt === "http://www.ign.com") {
+	console.log("Its a match");
+if	(myPrompt === "http//:www.google.com") {
+	console.log("Not a Match Try Again");	
+} else {
+	console.log("Wrong Url Try again");
+};
+} else {
+	console.log("Its a Match congratulations");
+};
+
+
+// function 
 
 var FirstCase = function (srtinginput) {
 var letter = stringinput.split ("");
@@ -52,5 +59,21 @@ var letter = stringinput.split ("");
 	var capletter = letter.combine ("");
 	return capLetter;
 };
+
+
+// function 
+
+var checkemail = function(val) {
+var at = email.indexof("@"); 
+var email = val;
+var dot = email.lastaindexof(".");
+
+if (at == -1 ||dot == -1 || (at + 2) >= dot) { 
+	return false;
+} else {
+	return true;
+}
+};
+
 
 
